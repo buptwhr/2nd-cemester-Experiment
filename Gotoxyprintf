@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+
+#include<windows.h>
+#include<time.h>
+void gotoxy(int x,int y)//位置函数  
+{  
+    COORD pos;  
+    pos.X=x;   
+    pos.Y=y;
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),pos);  
+};
+main(){
+	gotoxy(5,5);
+	printf("666");
+	Sleep(1000);
+	gotoxy(5,5);
+	printf("77");
+}
